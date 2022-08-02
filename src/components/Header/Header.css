@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo-container .logo{
+    width: 150px;
+    height: 110px;
+    margin:2%;
+}
+.header .titulo-container{
+    text-align:center;
+}
+.header .titulo-container .titulo{
+font-size: 50px;
+
+
+}
+.nav-container{
+    margin: 2%;
+}
+
+.nav-container .list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-container .list li{
+    margin:15px;
+    list-style: none;
+    font-size: 22px;
+}
