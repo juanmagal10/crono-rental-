@@ -1,0 +1,65 @@
+.swiper{
+    .slide{
+        overflow: hidden;
+        position: relative;
+        background-color: transparent;
+        object-fit: cover;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        img {
+                position: absolute;
+                border: 4px solid #000;
+                width: 100%;
+            } 
+    }
+   
+    .swiper-button-prev{
+        left: 0;
+        color: #222;
+        z-index: 7000;
+    }
+    .swiper-button-next{
+        right: 0;
+        color: #222;
+        z-index: 7000;
+    }
+}
+
+
+.swiper-thumbs {
+ 
+        .swiper-slide{
+            height: 20vh;
+            object-fit: cover;
+            width: 100%;
+
+                .slide-thumb-content {
+                        object-fit: cover;
+                        height: 22vh;
+                        width: 100%;
+                    }
+            }
+
+        
+
+}
+    
+
+
+
+        // &-wrapper{
+        //     width:95%;
+        //     padding-top: 100%;
+        //     overflow: hidden;
+        //     position: relative;
+    
+    
+        //     img{
+        //         top: 0;
+        //         left: 0;
+        //         width: 100%;
+        //     }
+        // }

@@ -1,5 +1,6 @@
 :root{
-    --naranja:#ff5600
+    --naranja:#ff5600;
+    --azul:#3a6372;
 }
 *{
     margin: 0;
