@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react'
 import PropTypes from 'prop-types'
+import { Link } from "react-router-dom";
 
 
 import 'swiper/css'
@@ -15,6 +16,7 @@ import './Carousel.scss'
 
 import {Autoplay, Navigation, Thumbs } from
     "swiper";
+import Products from "../../pages/Products";
 
 const Carousel = props => {
   const [activeThumb, setActiveThumb]=useState(null)
@@ -32,9 +34,12 @@ const Carousel = props => {
         >
           {
             props.images.map((item, index) => (
-              <SwiperSlide className="slide" key={index}>
-                <img className="slide-content" src={item} alt="img" />
-              </SwiperSlide>
+            
+                <SwiperSlide className="slide" key={index}>
+                  <img className="slide-content" src={item.img} alt="img" />
+                  <Link to={item.url}><button className="button">Mas...</button></Link>
+                </SwiperSlide>
+           
             ))
           }
    
@@ -53,9 +58,12 @@ const Carousel = props => {
           >
             {
               props.images.map((item, index) => (
-                <SwiperSlide className="slide-thumb" key={index}>
-                  <img className="slide-thumb-content" src={item} alt="img" />
-                </SwiperSlide>
+                <div className="swiper-container">
+                  <SwiperSlide className="slide-thumb" key={index}>
+                    <img className="slide-thumb-content" src={item.img} alt="img" />
+                  </SwiperSlide>
+                    <Link to={item.url}><button className="button">mas...</button></Link>
+                </div>
               ))
             }
              

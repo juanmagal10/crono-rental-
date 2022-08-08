@@ -15,6 +15,9 @@
                 width: 100%;
             } 
     }
+    .button {
+        z-index: 15000;
+    }
    
     .swiper-button-prev{
         left: 0;
@@ -26,6 +29,30 @@
         color: #222;
         z-index: 7000;
     }
+    .swiper-slide-active{
+        display: flex;
+        justify-content: center;
+        .button{
+            position: absolute;
+            z-index: 10000;
+            width: 100px;
+            top: 75%;
+            height: 50px;
+            background-color: #ccc;
+            opacity: .7;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .button:hover{
+            background-color:#ff5600;
+            border: 1px solid #ccc;
+            opacity: .7;
+        }
+    }
+ 
 }
 
 
@@ -42,8 +69,6 @@
                         width: 100%;
                     }
             }
-
-        
 
 }
     
