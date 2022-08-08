@@ -1,0 +1,13 @@
+.products-list{
+    display: grid;
+    grid-auto-rows: 22rem;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    padding: 15px;
+}
+
+.products-section-title{
+    font-size: 28px;
+    text-align: center;
+    margin: 10px;
+}

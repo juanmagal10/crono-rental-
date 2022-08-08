@@ -20,7 +20,7 @@ const Header = () => {
       <div className={modal?'modal':'modal-closed'} onClick={showAside}></div>
       <header className='header'>
       <div className="logo-container">
-        <img src={logo} alt='logo' className='logo' />
+        <Link to='/'><img src={logo} alt='logo' className='logo' /></Link>
       </div>
         <div className="titulo-container">
           <h1 className='titulo'>Crono Rental</h1>

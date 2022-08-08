@@ -2,9 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import {images} from './assets'
 import Products from "./pages/Products";
+import {productsData} from './assets/products-data/products'
 
 function App() {
-  const array=['sony', 'canon', ' nikon']
+  const array=productsData
   return (
     <BrowserRouter>
       <Routes>
