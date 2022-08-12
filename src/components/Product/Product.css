@@ -21,3 +21,14 @@
     margin: 10px;
     text-align: center;
 }
+.product-card .link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.product-card .link .button{
+    width: 40%;
+    margin:5px auto 5px auto;
+    cursor: pointer;
+}

@@ -1,10 +1,13 @@
 export const images = [{
     img: require('./leds.jpg'),
-url:'products-ligths'}, 
+    nombre: 'Iluminacion',
+    url:'productsLigths'}, 
     {img: require('./sony-a7-iv.jpg'),
-url:'products-photo'}, 
+    nombre:'Camaras y Lentes',
+    url:'productsPhoto'}, 
     {img: require('./Microfono.jpg'),
-url:'products-sound'},
+    nombre:'Sonido',
+    url:'productsSound'},
 
     
     // require('./sony-a7-iv.jpg'), 

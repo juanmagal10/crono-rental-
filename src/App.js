@@ -1,18 +1,25 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import Home from "./pages/Home";
 import {images} from './assets'
 import Products from "./pages/Products";
 import {productsData} from './assets/products-data/products'
+import ProductPage from "./pages/ProductPage";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
-  const array=productsData
+  const array = productsData
+  
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path="/products-photo" element={<Products categoria={array}/> } ></Route>
-        <Route path="/products-ligths" element={<Products categoria={array}/> } ></Route>
-        <Route path="/products-sound" element={<Products categoria={array}/> } ></Route>
+        <Route path='/' element={<Home />}/>
+
+        <Route path="*" element={<ErrorPage/> } ></Route>
+        <Route path="/:productsCategory" element={<Products categoria={array}/> } ></Route>
+        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[0] } /> } ></Route>
+        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[1] } /> } ></Route>
+        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[2] } /> } ></Route>
+        
       </Routes>
    </BrowserRouter>
   );
