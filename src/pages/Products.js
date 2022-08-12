@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../components/Header/Header'
 import Product from '../components/Product/Product'
-import './styles/ProductsStyles.css'
+import './stylesProducts/ProductsStyles.css'
 import { useContext } from 'react'
 import { DataContext } from '../context/dataContext'
 import { useParams } from 'react-router-dom'
@@ -43,7 +43,7 @@ const Products = ({ categoria }) => {
           console.log(contextData)
         
           return (
-          <div key={index} className='product-container'> 
+          <div key={index} className='product-box'> 
               <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url}> 
                
               </Product>

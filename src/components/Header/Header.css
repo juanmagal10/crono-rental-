@@ -10,7 +10,7 @@
 .header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 120px;
+    height: 15vh;
 
     /* background-image: linear-gradient(#fff,#fff, #fefefe, #fcfcfc,  #f9f9f9, #e0e0e0); */
     background-color: #f5f5f5;
@@ -21,8 +21,8 @@
 }
 
 .header .logo-container .logo{
-    width: 150px;
-    height: 110px;
+    width: 125px;
+    height: 92px;
     margin:2% 2% 2px 15%;
 }
 .header .titulo-container{
