@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import './stylesProductPage/productPage.css';
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 
 const ProductPage = ({ products}) => {
@@ -22,7 +24,8 @@ const ProductPage = ({ products}) => {
                 <p className='product-description'>{product.description}</p>
               </div>
         <Link to={`/${productUrl.productsCategory}`} className='back-btn'><button>Back</button></Link>
-          </div>
+        </div>
+        <Footer></Footer>
         
         </>
   )

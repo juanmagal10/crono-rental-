@@ -37,7 +37,7 @@ const Carousel = props => {
             
                 <SwiperSlide className="slide" key={index}>
                   <img className="slide-content" src={item.img} alt="img" />
-                  <Link to={item.url}><button className="button">Mas...</button></Link>
+                  <Link to={item.url} className='button-container'><button className="button">Mas...</button></Link>
                 </SwiperSlide>
            
             ))

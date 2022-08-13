@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../components/Header/Header'
 import Product from '../components/Product/Product'
+import Footer from '../components/Footer/Footer'
 import './stylesProducts/ProductsStyles.css'
 import { useContext } from 'react'
 import { DataContext } from '../context/dataContext'
@@ -35,27 +36,29 @@ const Products = ({ categoria }) => {
   return (
     <>
       <Header></Header>
-    <h2 className='products-section-title'>{titulo}</h2>
-      <div className='products-list'>
-        
- {      
-              categoria.map((item, index) => {
-          console.log(contextData)
-        
-          return (
-          <div key={index} className='product-box'> 
-              <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url}> 
-               
-              </Product>
-              
-          </div>
-        )
-        
-      })
-
-          }
-    
+    <div className="product-list-container">
+      <h2 className='products-section-title'>{titulo}</h2>
+        <div className='products-list'>
+          
+       {
+                categoria.map((item, index) => {
+            console.log(contextData)
+      
+            return (
+            <div key={index} className='product-box'>
+                <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url}>
+      
+                </Product>
+      
+            </div>
+          )
+      
+        })
+            }
+      
+        </div>
     </div>
+      <Footer></Footer>
       </>
   )
 }

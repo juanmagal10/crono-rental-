@@ -19,6 +19,9 @@
 .header .logo-container{
    
 }
+.link   {
+    text-decoration: none;
+}
 
 .header .logo-container .logo{
     width: 125px;
@@ -35,6 +38,10 @@
 font-size: 50px;
 color: #222;
 text-shadow: 2px 2px 6px #ddd;
+cursor: pointer;
+}
+.header .titulo-container .titulo:hover{
+color: var(--naranja);
 }
 .nav-container{
     display: flex;
@@ -71,6 +78,8 @@ align-items: flex-end;
 .nav-container .asside-icon-container{
     display: none;
     z-index: 3000;
+    margin: 2% 15% 2px 2%;
+   
 }
 .aside-hiden{
     position: absolute;
@@ -119,6 +128,9 @@ align-items: flex-end;
 }
 
 @media screen and (max-width:1100px){
+    .header .titulo-container .titulo{
+        font-size: 40px;
+    }
     .nav-container{
         display: flex;
         align-items: center;
@@ -140,5 +152,77 @@ align-items: flex-end;
         width: 50px;
         height: 50px;
         cursor: pointer;
+       
     }
 }
+
+@media screen and (max-width:750px){
+    .header{
+        height: 13vh;
+    }
+    .header .titulo-container .titulo {
+            font-size: 34px;
+        }
+    .header .logo-container .logo {
+        width: 115px;
+        height: 88px;
+        margin: 2% 2% 2px 15%;
+    }
+    .nav-container .asside-icon-container .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:650px){
+    .header{
+        height: 11vh;
+    }
+    .header .titulo-container .titulo {
+            font-size: 30px; 
+        }
+    .header .logo-container .logo {
+        width: 99px;
+        height: 76px;
+        margin: 2% 2% 2px 8%;
+    }
+    .nav-container .asside-icon-container{
+        margin: 2% 10% 2px 2%;
+    }
+    .nav-container .asside-icon-container .icon {
+        width: 35px;
+        height: 35px;
+        
+    }
+}
+@media screen and (max-width:580px){
+    .header{
+        height: 10vh;
+    }
+    .header .titulo-container .titulo {
+            font-size: 25px;
+        }
+    .header .logo-container .logo {
+        width: 90px;
+        height: 70px;
+    }
+    .nav-container .asside-icon-container .icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width:480px){
+        .header .titulo-container .titulo {
+                font-size: 19px;
+            }
+        .header .logo-container .logo {
+        width: 87px;
+        height: 69px;
+        margin: 2% 1% 2px 7%;
+        }
+        .nav-container .asside-icon-container {
+            margin: 2% 7% 2px 1%;
+            width: 31px;
+            height: 31px;
+        }
+    }

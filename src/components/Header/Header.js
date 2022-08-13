@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import logo from '../../assets/proyecto-crono.png'
 import './Header.css'
 import { Link } from 'react-router-dom'
-import {FiMenu} from 'react-icons/fi'
+import { FiMenu } from 'react-icons/fi'
+import { HashLink } from 'react-router-hash-link'
 
 
 const Header = () => {
@@ -18,12 +19,14 @@ const Header = () => {
   return (
     <>
       <div className={modal?'modal':'modal-closed'} onClick={showAside}></div>
-      <header className='header'>
+      <header className='header' id='header'>
       <div className="logo-container">
-        <Link to='/'><img src={logo} alt='logo' className='logo' /></Link>
+        <HashLink to='/#header' className='link'><img src={logo} alt='logo' className='logo' /></HashLink>
       </div>
         <div className="titulo-container">
-          <h1 className='titulo'>Crono Rental</h1>
+          <HashLink to='/#header' className='link'>
+            <h1 className='titulo'>Crono Rental</h1>
+          </HashLink>
         </div>
         <div className="nav-container"> 
           <div className="asside-icon-container"><FiMenu className='icon' onClick={showAside} />

@@ -1,4 +1,50 @@
 .footer{
-    height: 120px;
+    height: fit-content;
     background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.info-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.adress address{
+    font-size: 11px;
+    margin: 6px 10px;
+    color: #eee;
+}
+.adress p{
+    font-size: 11px;
+    margin: 6px 10px;
+    color: #eee;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-container .icon{
+    color: #f45400;
+    margin: 10px 30px;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:750px){
+
+
+    .contact-container .icon {
+            margin: 7px 20px;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
 }
