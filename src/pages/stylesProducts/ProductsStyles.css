@@ -1,13 +1,27 @@
+.products {
+    min-height: 85vh;
+}
 .products-list{
     display: grid;
     grid-auto-rows: 22rem;
     gap:1rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     padding: 15px;
+    height: 100%;
 }
 
 .products-section-title{
     font-size: 28px;
     text-align: center;
     margin: 10px;
+}
+.product-card{
+    margin-bottom: 40px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
 }

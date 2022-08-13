@@ -36,29 +36,31 @@ const Products = ({ categoria }) => {
   return (
     <>
       <Header></Header>
-    <div className="product-list-container">
-      <h2 className='products-section-title'>{titulo}</h2>
-        <div className='products-list'>
-          
-       {
-                categoria.map((item, index) => {
-            console.log(contextData)
-      
-            return (
-            <div key={index} className='product-box'>
-                <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url}>
-      
-                </Product>
-      
-            </div>
-          )
-      
-        })
-            }
+  
+      <section className='products'>
+        <h2 className='products-section-title'>{titulo}</h2>
+          <div className='products-list'>
+        
+         {
+                  categoria.map((item, index) => {
+              console.log(contextData)
+        
+              return (
+              <div key={index} className='product-box'>
+                  <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url}>
+        
+                  </Product>
+        
+              </div>
+            )
+        
+          })
+              }
       
         </div>
-    </div>
-      <Footer></Footer>
+      </section>
+      <Footer className='footer'></Footer>
+    
       </>
   )
 }

@@ -17,6 +17,8 @@
     
 }
 .header .logo-container{
+    height: 100%;
+    width: 100%;
    
 }
 .link   {
@@ -216,8 +218,8 @@ align-items: flex-end;
                 font-size: 19px;
             }
         .header .logo-container .logo {
-        width: 87px;
-        height: 69px;
+        width: 70%;
+        height:90%;
         margin: 2% 1% 2px 7%;
         }
         .nav-container .asside-icon-container {
