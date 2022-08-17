@@ -16,15 +16,15 @@ const Products = ({ categoria }) => {
   let titulo=''
   switch (urlparams){
     case 'productsPhoto':
-      categoria = categoria[0]
+      categoria = categoria[0].products
       titulo='Camaras y Lentes'
       break
     case 'productsLigths':
-      categoria = categoria[1]
+      categoria = categoria[1].products
       titulo='Iluminación'
       break
     case 'productsSound':
-      categoria = categoria[2]
+      categoria = categoria[2].products
       titulo='Sonido'
       break
   }
@@ -40,7 +40,6 @@ const Products = ({ categoria }) => {
         
  {      
               categoria.map((item, index) => {
-          console.log(contextData)
         
           return (
           <div key={index} className='product-box'> 

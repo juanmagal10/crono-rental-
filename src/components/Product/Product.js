@@ -2,7 +2,8 @@ import React from 'react'
 import './Product.css'
 import { Link } from 'react-router-dom'
 
-const Product = ({img, title, description,url,  categoria}) => {
+const Product = ({ img, title, description,url,  categoria }) => {
+  // const {url}=categoria[2]
   return (
       <div className='product-card'>
           <h4 className='product-title-name'>{title}</h4>

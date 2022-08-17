@@ -16,9 +16,9 @@ function App() {
 
         <Route path="*" element={<ErrorPage/> } ></Route>
         <Route path="/:productsCategory" element={<Products categoria={array}/> } ></Route>
-        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[0] } /> } ></Route>
-        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[1] } /> } ></Route>
-        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[2] } /> } ></Route>
+        <Route path="/:productsCategory/:productName" element={<ProductPage products={array} /> } ></Route>
+        {/* <Route path="/:productsCategory/:productName" element={<ProductPage products={array[1] } /> } ></Route>
+        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[2] } /> } ></Route> */}
         
       </Routes>
    </BrowserRouter>

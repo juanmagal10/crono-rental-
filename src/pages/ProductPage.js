@@ -7,6 +7,19 @@ import Header from '../components/Header/Header';
 const ProductPage = ({ products}) => {
   const productUrl = useParams()
 
+  // switch (products)
+    switch (productUrl.productsCategory){
+    case 'productsPhoto':
+      products = products[0].products
+      break
+    case 'productsLigths':
+      products = products[1].products
+      break
+    case 'productsSound':
+      products = products[2].products
+      break
+  }
+
   const filteredProduct = products.filter((item) => item.url === productUrl.productName)
   
   console.log(filteredProduct)
