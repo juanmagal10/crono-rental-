@@ -4,6 +4,9 @@ import { images } from "../assets";
 export const DataContext = createContext()
 
 export const DataContextProvider = (props) => {
+    const arraySwitcher = (array) => {
+        
+    }
     const contextData = images;
 
     const valor = contextData;
