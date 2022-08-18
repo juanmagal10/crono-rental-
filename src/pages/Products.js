@@ -43,7 +43,7 @@ const Products = ({ categoria }) => {
         
          {
                   categoria.map((item, index) => {
-              console.log(contextData)
+              
         
               return (
               <div key={index} className='product-box'>
