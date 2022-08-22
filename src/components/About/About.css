@@ -1,0 +1,18 @@
+.about-container{
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-title{
+    margin-bottom: 30px;
+}
+
+.about-description{
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+
+}
