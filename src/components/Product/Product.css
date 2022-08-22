@@ -1,6 +1,4 @@
-.product-list-container{
-    height: 85vh;
-}
+
 .product-card{
     border: 1px solid #222;
     display: flex;
@@ -8,6 +6,7 @@
     border-radius: 4px;
     margin: 10px;
     cursor: pointer;
+    min-height:390px ;
     /* align-items: center; */
 }
 
@@ -20,12 +19,15 @@
     margin:5px auto;
     border-radius: 6px;
     width: 90%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .product-card .product-description{
     margin: 10px;
     text-align: center;
 }
+
 .product-card .link{
     display: flex;
     justify-content: center;

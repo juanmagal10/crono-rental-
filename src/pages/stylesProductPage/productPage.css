@@ -1,6 +1,7 @@
 
 .product-container{
-    height: 85vh;
+    min-height: 85vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +16,8 @@
     border-radius: 6px;
     height: 80%;
     padding: 30px;
+    width: 500px;
+ 
 }
 
 .product-name{
@@ -48,4 +51,24 @@
 .back-btn button:hover{
     background-color: #ff5600;
 
+}
+
+.carac-list{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: start;
+    
+
+}
+
+.list-item{
+    box-sizing: border-box;
+    list-style: none;
+    margin-top: 6px;
+}
+.list-icon{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
 }

@@ -47,8 +47,7 @@ const Products = ({ categoria }) => {
         
               return (
               <div key={index} className='product-box'>
-                  <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url}>
-        
+                  <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url} caracteristicas={item.caracteristicas}>
                   </Product>
         
               </div>
