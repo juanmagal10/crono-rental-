@@ -35,31 +35,36 @@ const Products = ({ categoria }) => {
   const contextData=useContext(DataContext)
   return (
     <>
+      <div className='products-page-container'>
+
       <Header></Header>
   
-      <section className='products'>
-        <h2 className='products-section-title'>{titulo}</h2>
-          <div className='products-list'>
+      <div className="container">
+        <section className='products'>
+          <h2 className='products-section-title'>{titulo}</h2>
+            <div className='products-list'>
         
-         {
-                  categoria.map((item, index) => {
+           {
+             categoria.map((item, index) => {
+               
+               
+               return (
+                 <div key={index} className='product-box'>
+                    <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url} caracteristicas={item.caracteristicas}>
+                    </Product>
+        
+                </div>
+              )
               
+            })
+          }
         
-              return (
-              <div key={index} className='product-box'>
-                  <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url} caracteristicas={item.caracteristicas}>
-                  </Product>
-        
-              </div>
-            )
-        
-          })
-              }
-      
-        </div>
-      </section>
-      <Footer className='footer'></Footer>
+          </div>
+        </section>
+        <Footer className='footer'></Footer>
+      </div>
     
+          </div>
       </>
   )
 }

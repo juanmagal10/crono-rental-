@@ -32,23 +32,25 @@ const ProductPage = ({ products}) => {
     return (
       <>
         <Header></Header>
-            <div className="product-container" >
-              <h3 className='product-name'>{product.name.toUpperCase()}</h3>
-                <div className='product'>
-                <img src={product.img} alt={product.name} className='product-image'/>
-            <p className='product-description'>{product.description}</p>
-                <ul className='carac-list'>
-                    {product.caracteristicas.map((caracteristica, index) => {
-                      return (
-                        <li className='list-item' key={index}><BsFillStopCircleFill className='list-icon'/>{caracteristica}</li>
-                      )
-                    })}
-              <li className='list-item'><BsFillStopCircleFill className='list-icon'/>Precio: ${product.precio} la jornada de 8hs.</li>
-                </ul>
-              </div>
-        <Link to={`/${productUrl.productsCategory}`} className='back-btn'><button>Back</button></Link>
-        </div>
-        <Footer></Footer>
+            <div className="container">
+              <div className="product-container" >
+                <h3 className='product-name'>{product.name.toUpperCase()}</h3>
+                  <div className='product'>
+                  <img src={product.img} alt={product.name} className='product-image'/>
+              <p className='product-description'>{product.description}</p>
+                  <ul className='carac-list'>
+                      {product.caracteristicas.map((caracteristica, index) => {
+                        return (
+                          <li className='list-item' key={index}><BsFillStopCircleFill className='list-icon'/>{caracteristica}</li>
+                        )
+                      })}
+                <li className='list-item'><BsFillStopCircleFill className='list-icon'/>Precio: ${product.precio} la jornada de 8hs.</li>
+                  </ul>
+                </div>
+                      <Link to={`/${productUrl.productsCategory}`} className='back-btn'><button>Back</button></Link>
+                      </div>
+                      <Footer></Footer>
+            </div>
         
         </>
   )

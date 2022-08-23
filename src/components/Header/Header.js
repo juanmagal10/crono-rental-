@@ -9,6 +9,7 @@ import { HashLink } from 'react-router-hash-link'
 const Header = () => {
   const [asideMenu, setAsideMenu] = useState(false)
   const [modal, setModal] = useState(false)
+  const [headerShadow, setHeaderShadow]=useState(false)
   
   const showAside = () => {
     setAsideMenu(!asideMenu)
@@ -16,10 +17,19 @@ const Header = () => {
     setModal(!modal)
   }
 
+  const addShadow = () => {
+    if (window.scrollY >= 1) {
+      setHeaderShadow(true)
+    }else {
+      setHeaderShadow(false)
+    }
+  }
+  window.addEventListener('scroll', addShadow)
+
   return (
     <>
       <div className={modal?'modal':'modal-closed'} onClick={showAside}></div>
-      <header className='header' id='header'>
+      <header className={headerShadow?'header-shadow header':'header'} id='header'>
       <div className="logo-container">
         <HashLink to='/#header' className='link'><img src={logo} alt='logo' className='logo' /></HashLink>
       </div>
