@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
 
       <div className="contact-container">
-        <a href="https://api.whatsapp.com/send?phone=5493535001031" target="_blank"><FaWhatsappSquare  className='icon'/></a>
+        <a href="https://api.whatsapp.com/send?phone=5493535001030" target="_blank"><FaWhatsappSquare  className='icon'/></a>
        <a href="https://www.instagram.com/crono.rental/?hl=es-la" target='_blank'>< FaInstagramSquare className='icon'/></a>
        <a href="https://www.facebook.com/crono.rental" target='_blank'>< FaFacebookSquare className='icon'/></a>
       </div>
