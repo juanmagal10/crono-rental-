@@ -23,6 +23,7 @@
 .product-name{
     font-size: 24px;
     margin: 10px auto 15px auto;
+    scroll-margin-top: 30vh;
 }
 
 .product-image{

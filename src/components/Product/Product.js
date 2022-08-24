@@ -1,6 +1,7 @@
 import React from 'react'
 import './Product.css'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 const Product = ({ img, title, description,url, categoria, caracteristicas }) => {
   // const {url}=categoria[2]
@@ -10,8 +11,8 @@ const Product = ({ img, title, description,url, categoria, caracteristicas }) =>
           <img className='product-img' src={img} alt={title} />
       <p className='product-description'>{description.length>100?`${description.substr(0,100)} ...`:description}</p>
   
-      <Link to={`/${categoria}/${url}`} className='link'><button className='button'>Mas info...</button>
-      </Link>
+      <HashLink to={`/${categoria}/${url}/#product-container`} className='link'><button className='button'>Mas info...</button>
+      </HashLink>
       </div>
   )
 }

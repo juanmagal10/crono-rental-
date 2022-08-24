@@ -33,7 +33,7 @@ const ProductPage = ({ products}) => {
         <Header></Header>
             <div className="container">
               <div className="product-container" >
-                <h3 className='product-name'>{product.name.toUpperCase()}</h3>
+                <h3 className='product-name' id='product-container'>{product.name.toUpperCase()}</h3>
                   <div className='product'>
                   <img src={product.img} alt={product.name} className='product-image'/>
               <p className='product-description'>{product.description}</p>

@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react'
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 
 import 'swiper/css'
@@ -37,7 +38,7 @@ const Carousel = props => {
             
                 <SwiperSlide className="slide" key={index} id='slide'>
                   <img className="slide-content" src={item.img} alt="img" />
-                  <Link to={item.url} className='button-container'><button className="button">Mas...</button></Link>
+                  <HashLink to={`/${item.url}/#products-section`} className='button-container'><button className="button">Mas...</button></HashLink>
                 </SwiperSlide>
            
             ))

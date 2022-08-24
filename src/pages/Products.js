@@ -40,8 +40,8 @@ const Products = ({ categoria }) => {
       <Header></Header>
   
       <div className="container">
-        <section className='products'>
-          <h2 className='products-section-title'>{titulo}</h2>
+        <section className='products' id='products-section'>
+          <h2 className='products-section-title' >{titulo}</h2>
             <div className='products-list'>
         
            {

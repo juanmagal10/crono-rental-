@@ -57,30 +57,25 @@ export const productsData = [{
         category: 'luces', 
 
         products:[{
-        img: require('../sony-a7-iv.jpg'),
-        name: 'luz led azul',
-        description: 'cmkiqmoc cmqkowmckq cmpoqwmckqmwckq mckqwmcopqw mcoqpmcpqwc', 
-            url: 'luz-led-azul', 
-        caracteristicas: []
+        img: require('../leds.jpg'),
+        description: 'incluye adaptadores, rotulas y tripies sin cargo', 
+        name: 'Pack Ilimuniación cine 1',
+            url: 'pack-iluminacion1', 
+            caracteristicas: [' kit luces yognuo x3 + panel de 9600LM IRC 95% bateria 4hs en maxima potencia', 'A vara led yognuo 360 colores + bateria np750 IRC 95%', 'B vara led yognuo 360 colores + bateria np750 IRC 95%', 'C vara led yognuo 360 colores + bateria np750 IRC 95%', 'D Led Yongnuo control remoto 1200+transformador+baterias IRC 95%'], 
+        precio:3000
 
 },
  
     {
-        img: require('../sony-a7-iv.jpg'),
-        name: 'luz-led-azul', 
-        description: 'cmkiqmoc cmqkowmckq cmpoqwmckqmwckq mckqwmcopqw mcoqpmcpqwc', 
-        url: 'luz-led-blanca', 
-        caracteristicas: [], 
-        precio:6000
+        img: require('../leds.jpg'),
+        name: 'Pack Ilimuniación cine 2', 
+        description: 'incluye adaptadores, rotulas y tripies sin cargo', 
+        url: 'pack-iluminacion2', 
+        caracteristicas: ['Kit luces yongnuo x3 bateria 4hs en maxima potencia', 'A vara led yognuo 360 colores + bateria np750 IRC 95%', 'B vara led yognuo 360 colores + bateria np750 IRC 95%', 'C vara led yognuo 360 colores + bateria np750 IRC 95%'], 
+        precio:1700
     }, 
 
-    {
-        img: require('../sony-a7-iv.jpg'),
-        name: 'luz led roja', 
-        description: 'cmkiqmoc cmqkowmckq cmpoqwmckqmwckq mckqwmcopqw mcoqpmcpqwc', 
-        url: 'luz-led-roja', 
-        caracteristicas: []
-        }]
+]
     },
     
     {
