@@ -35,7 +35,7 @@ const Carousel = props => {
           {
             props.images.map((item, index) => (
             
-                <SwiperSlide className="slide" key={index}>
+                <SwiperSlide className="slide" key={index} id='slide'>
                   <img className="slide-content" src={item.img} alt="img" />
                   <Link to={item.url} className='button-container'><button className="button">Mas...</button></Link>
                 </SwiperSlide>

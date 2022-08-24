@@ -28,7 +28,6 @@ const ProductPage = ({ products}) => {
   
   const product=filteredProduct[0]
   
-  console.log(product.caracteristicas)
     return (
       <>
         <Header></Header>

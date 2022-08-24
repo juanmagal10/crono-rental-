@@ -48,6 +48,7 @@ font-size: 50px;
 color: #222;
 text-shadow: 2px 2px 6px #ddd;
 cursor: pointer;
+transition: all .25s;
 }
 .header .titulo-container .titulo:hover{
 color: var(--naranja);
@@ -78,6 +79,7 @@ align-items: flex-end;
     color: #000;
     text-decoration: nonew;
     text-shadow: 2px 2px 6px #ccc;
+    transition: all .25s;
 }
 
 .nav-container .nav .list li:hover{

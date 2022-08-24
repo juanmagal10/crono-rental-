@@ -41,6 +41,10 @@
     width: 33px;
     height: 33px;
     cursor: pointer;
+    transition: all .3s;
+}
+.contact-container .icon:hover{
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:750px){

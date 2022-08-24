@@ -8,7 +8,7 @@ const Product = ({ img, title, description,url, categoria, caracteristicas }) =>
       <div className='product-card'>
           <h4 className='product-title-name'>{title}</h4>
           <img className='product-img' src={img} alt={title} />
-      <p className='product-description'>{description}</p>
+      <p className='product-description'>{description.length>100?`${description.substr(0,100)} ...`:description}</p>
   
       <Link to={`/${categoria}/${url}`} className='link'><button className='button'>Mas info...</button>
       </Link>

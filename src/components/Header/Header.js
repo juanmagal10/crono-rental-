@@ -28,13 +28,14 @@ const Header = () => {
 
   return (
     <>
+      <div id="inicio"></div>
       <div className={modal?'modal':'modal-closed'} onClick={showAside}></div>
       <header className={headerShadow?'header-shadow header':'header'} id='header'>
       <div className="logo-container">
-        <HashLink to='/#header' className='link'><img src={logo} alt='logo' className='logo' /></HashLink>
+        <HashLink to='/#inicio' className='link'><img src={logo} alt='logo' className='logo' /></HashLink>
       </div>
         <div className="titulo-container">
-          <HashLink to='/#header' className='link'>
+          <HashLink to='/#inicio' className='link'>
             <h1 className='titulo'>Crono Rental</h1>
           </HashLink>
         </div>
@@ -43,22 +44,22 @@ const Header = () => {
           </div>
           <nav className='nav'>
             <ul className='list'>
-              <Link to='#' style={{textDecoration:'none', color:'#222'}}><li >Contacto</li></Link>
-              <Link to='#' style={{textDecoration:'none', color:'#222'}}><li>Productos</li></Link>
-              <Link to='#' style={{textDecoration:'none', color:'#222'}}><li>Info</li></Link>
+              <HashLink to='/#footer' style={{textDecoration:'none', color:'#222'}}><li >Contacto</li></HashLink>
+              <HashLink to='/#inicio' style={{textDecoration:'none', color:'#222'}}><li>Productos</li></HashLink>
+              <HashLink to='/#about' style={{textDecoration:'none', color:'#222'}}><li>Info</li></HashLink>
             </ul>
           </nav>
           <aside className={asideMenu ? 'aside-open aside' : 'aside-hiden aside'}>
             <ul className='aside-list'>
-              <Link to='#' style={{textDecoration:'none', color:'#222'}}>
+              <HashLink to='/#footer' style={{textDecoration:'none', color:'#222'}}>
                 <li onClick={showAside}>Contacto</li>
-              </Link>
-              <Link to='#' style={{textDecoration:'none', color:'#222'}}>
+              </HashLink>
+              <HashLink to='/#inicio' style={{textDecoration:'none', color:'#222'}}>
                 <li  onClick={showAside}>Productos</li>
-              </Link>
-              <Link to='#' style={{textDecoration:'none', color:'#222'}}>
+              </HashLink>
+              <HashLink to='/#about' style={{textDecoration:'none', color:'#222'}}>
                 <li  onClick={showAside}>Info</li>
-              </Link>
+              </HashLink>
             </ul>
           </aside>
         </div>

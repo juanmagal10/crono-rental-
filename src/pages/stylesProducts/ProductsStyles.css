@@ -5,7 +5,7 @@
 }
 .products-page-container{
     position: relative;
-    top:-10px;
+    top:-25px;
 }
 .products {
     min-height: 85vh;
@@ -17,13 +17,16 @@
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     padding: 15px;
     height: 100%;
+    margin-top: 35px;
 }
 
 .products-section-title{
     font-size: 28px;
     text-align: center;
-    margin: 10px;
+    margin: 25px;
     color: #444;
+    position: relative;
+    top: 23px;
 }
 .product-card{
     margin-bottom: 40px;

@@ -6,7 +6,7 @@ import {FaFacebookSquare} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className='footer' id='footer'>
       <div className="adress">
         <address className='direccion'>Direccion 1213</address>
          <p>telefono: 1233456677</p>
