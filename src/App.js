@@ -5,6 +5,7 @@ import Products from "./pages/Products";
 import {productsData} from './assets/products-data/products'
 import ProductPage from "./pages/ProductPage";
 import ErrorPage from "./pages/ErrorPage";
+import CartPage from './pages/CartPage'
 
 function App() {
   const array = productsData
@@ -16,7 +17,8 @@ function App() {
 
         <Route path="*" element={<ErrorPage/> } ></Route>
         <Route path="/:productsCategory" element={<Products categoria={array}/> } ></Route>
-        <Route path="/:productsCategory/:productName" element={<ProductPage products={array} /> } ></Route>
+        <Route path="/:productsCategory/:productName" element={<ProductPage products={array} />} ></Route>
+        <Route path="/cart" element={<CartPage/>}></Route>
         {/* <Route path="/:productsCategory/:productName" element={<ProductPage products={array[1] } /> } ></Route>
         <Route path="/:productsCategory/:productName" element={<ProductPage products={array[2] } /> } ></Route> */}
         

@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
 }
+
 .products-page-container{
     position: relative;
     top:-25px;
+    /* top: 15vh; */
    
 }
+
 .products {
     min-height: 85vh;
     scroll-margin-top: 15vh;
@@ -34,9 +37,9 @@
     margin-bottom: 40px;
 }
 
-.footer{
+/* .footer{
     position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 5px;
-}
+} */

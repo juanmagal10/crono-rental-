@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../components/Header/Header';
 import Carousel from '../components/Body/Carousel';
 import Footer from '../components/Footer/Footer';
@@ -15,7 +15,7 @@ const Home = () => {
 
       <Carousel images={images}></Carousel>
       <About></About>
-      <Footer></Footer>
+      <Footer Outlet></Footer>
       </div>
     </div>
   )

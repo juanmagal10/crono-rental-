@@ -44,14 +44,15 @@ const Header = () => {
           </div>
           <nav className='nav'>
             <ul className='list'>
-              <HashLink to='/#footer' style={{textDecoration:'none', color:'#222'}}><li >Contacto</li></HashLink>
+              <HashLink to='#footer' style={{textDecoration:'none', color:'#222'}}><li >Contacto</li></HashLink>
               <HashLink to='/#inicio' style={{textDecoration:'none', color:'#222'}}><li>Productos</li></HashLink>
               <HashLink to='/#about' style={{textDecoration:'none', color:'#222'}}><li>Info</li></HashLink>
+              <HashLink to='/cart/#inicio' style={{textDecoration:'none', color:'#222'}}><li>Carrito</li></HashLink>
             </ul>
           </nav>
           <aside className={asideMenu ? 'aside-open aside' : 'aside-hiden aside'}>
             <ul className='aside-list'>
-              <HashLink to='/#footer' style={{textDecoration:'none', color:'#222'}}>
+              <HashLink to='#footer' style={{textDecoration:'none', color:'#222'}}>
                 <li onClick={showAside}>Contacto</li>
               </HashLink>
               <HashLink to='/#inicio' style={{textDecoration:'none', color:'#222'}}>
@@ -59,6 +60,9 @@ const Header = () => {
               </HashLink>
               <HashLink to='/#about' style={{textDecoration:'none', color:'#222'}}>
                 <li  onClick={showAside}>Info</li>
+              </HashLink>
+              <HashLink to='/cart/#inicio' style={{textDecoration:'none', color:'#222'}}>
+                <li  onClick={showAside}>Carrito</li>
               </HashLink>
             </ul>
           </aside>

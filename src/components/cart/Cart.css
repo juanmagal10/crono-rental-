@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cart-container{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+.cart-title-container{
+    width: 100vw;
+    text-align: center;
+   
+
+}
+
+.cart-title{
+    font-size: 24px;
+    color:#444;
+    text-align: center;
+}
+
+
+.cart{
+    height: 85vh;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.cart-products-container{
+    height: fit-content;
+    width: 90%;
+    border: 1.5px solid #3a6372;;
+    /* display: flex; */
+    /* flex-direction: column; */
+    box-shadow: 4px 4px 9px 4px #dfdfdf;
+    border-radius: 3px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+ 
+.cart-product{
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    align-items: center;
+    margin-top: 30px;
+} 
+
+.cart-img-container{
+    width: 20%;
+    margin-left: 25px;
+   
+}
+.cart-product-img{
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.cart-name-container {
+    width: 60%;
+}
+.cart-product-name{
+    font-size: 16px;
+    text-align: left;
+}
+
+.cart-price-container {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clean-cart-button{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: #222;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.clean-cart-button:hover{
+    background-color:#f45400;
+    opacity: .8;
+    border: none;
+    outline: none;
+    color: #222;
+}
+
+@media screen and (max-width:750px) {
+    .cart-container {
+        top: 13vh;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .cart-container {
+        top: 11vh;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .cart-container {
+        top: 10vh;
+    }
+}

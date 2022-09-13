@@ -3,8 +3,8 @@ import Header from '../components/Header/Header'
 import Product from '../components/Product/Product'
 import Footer from '../components/Footer/Footer'
 import './stylesProducts/ProductsStyles.css'
-import { useContext } from 'react'
-import { DataContext } from '../context/dataContext'
+// import { useContext } from 'react'
+// import { AppContext} from '../context/dataContext'
 import { useParams } from 'react-router-dom'
 
 
@@ -18,7 +18,7 @@ const Products = ({ categoria }) => {
   switch (urlparams){
     case 'productsPhoto':
       categoria = categoria[0].products
-      titulo='Camaras y Lentes'
+      titulo = 'Camaras y Lentes';
       break
     case 'productsLigths':
       categoria = categoria[1].products
@@ -32,7 +32,7 @@ const Products = ({ categoria }) => {
   
 //  const categoriaUrl= images.filter(item => item.url === categoria.url)
   
-  const contextData=useContext(DataContext)
+  // const AppContext=useContext()
   return (
     <>
       <div className='products-page-container'>
@@ -50,9 +50,9 @@ const Products = ({ categoria }) => {
                
                return (
                  <div key={index} className='product-box'>
-                    <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url} caracteristicas={item.caracteristicas}>
+                   <Product img={item.img} title={item.name} description={item.description} categoria={urlparams} url={item.url} caracteristicas={item.caracteristicas} id={item.id} categoriaArray={categoria}>
                     </Product>
-        
+                        
                 </div>
               )
               

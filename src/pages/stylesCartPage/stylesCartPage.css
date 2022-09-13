@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.cart-page-container{
+    position: relative;
+    /* top: -25px; */
+}
+
+.cart-page { 
+   position: relative;
+   top: 15vh; 
+
+}
+
+.cart-section{
+    min-height: 85vh;
+    scroll-margin-top: 15vh;
+    height: fit-content;
+    
+}
+
+.cart-container-p{
+    height: 100%;
+    margin-top: 35px;
+}
+
+.footer-cart-container{
+    margin-top: 100px;
+}
+
+
+
+/* .footer{
+    position: fixed;
+    bottom: 0;
+} */
+
