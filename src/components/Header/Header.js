@@ -10,7 +10,7 @@ const Header = () => {
   const [asideMenu, setAsideMenu] = useState(false)
   const [modal, setModal] = useState(false)
   const [headerShadow, setHeaderShadow]=useState(false)
-  
+
   const showAside = () => {
     setAsideMenu(!asideMenu)
     console.log('hola')
