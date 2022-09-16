@@ -18,15 +18,15 @@ const CartPage = () => {
   }, []);
 
   return (
-    <>
-      <div className="cart-page-container">
-        <div className="cart-page">
+  
+      //<div className="cart-page-container">
+       // <div className="cart-page">
           <section className="cart-section">
             <Cart cart={cartState} />
           </section>
-        </div>
-      </div>
-    </>
+        //</div>
+     // </div>
+   
   );
 };
 

@@ -13,7 +13,6 @@ const Header = () => {
 
   const showAside = () => {
     setAsideMenu(!asideMenu)
-    console.log('hola')
     setModal(!modal)
   }
 
@@ -27,7 +26,7 @@ const Header = () => {
   window.addEventListener('scroll', addShadow)
 
   return (
-    <>
+    <div>
       <div id="inicio"></div>
       <div className={modal?'modal':'modal-closed'} onClick={showAside}></div>
       <header className={headerShadow?'header-shadow header':'header'} id='header'>
@@ -68,7 +67,7 @@ const Header = () => {
           </aside>
         </div>
       </header>
-    </>
+    </div>
   )
 }
 

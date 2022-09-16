@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-between;
     padding: 2px;
-    /* position: absolute;
-    bottom: 0; */
+    position: relative;
+    bottom: -15vh;
 }
 
 .info-container{

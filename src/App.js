@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
+import SharedLayout from './pages/SharedLayout';
 import Home from './pages/Home';
 import { images } from './assets';
 import Products from './pages/Products';
@@ -15,25 +16,26 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="container-grid">
-        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/:productsCategory"
-            element={<Products categoria={products} />}
-          ></Route>
-          <Route
-            path="/:productsCategory/:productName"
-            element={<ProductPage products={products} />}
-          ></Route>
-          <Route path="/cart" element={<CartPage />}></Route>
-          <Route path="*" element={<ErrorPage />}></Route>
-          {/* <Route path="/:productsCategory/:productName" element={<ProductPage products={array[1] } /> } ></Route>
-        <Route path="/:productsCategory/:productName" element={<ProductPage products={array[2] } /> } ></Route> */}
+          <Route path="/" element={<SharedLayout />}>
+              <Route
+                index
+                element={<Home />}
+              />
+              <Route
+                path="/:productsCategory"
+                element={<Products categoria={products} />}
+              />
+              <Route
+                path="/:productsCategory/:productName"
+                element={<ProductPage products={products} />}
+              />
+              <Route path="/cart" element={<CartPage />}/>
+              <Route path="*" element={<ErrorPage />}/>
+              {/* <Route path="/:productsCategory/:productName" element={<ProductPage products={array[1] } /> } ></Route>
+            <Route path="/:productsCategory/:productName" element={<ProductPage products={array[2] } /> } ></Route> */}
+          </Route>
         </Routes>
-        <Footer />
-      </div>
     </BrowserRouter>
   );
 }
