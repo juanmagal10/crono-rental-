@@ -7,11 +7,12 @@ import reducer from "../reducer/reducer";
 export const AppContext = React.createContext()
 
 const initialState = {
-    loading: false, 
+    loading: false,
     cart: [],
     total: 0, 
     amount:0
 }
+
 
  const AppProvider = ({children}) => {
     const [state,dispatch]=useReducer(reducer, initialState)
@@ -22,9 +23,12 @@ const initialState = {
      const clearCart = () => {
          dispatch({type:'CLEAR_CART'})
      }
-     const removeItem = (id, array) => {
-         dispatch({type:'REMOVE', payload:{id, array}})
+
+     const removeItem = (id, cart, arregloFiltrado) => {
+         dispatch({ type: 'REMOVE', payload: { id, cart } })
+        
      }
+
      const addItem = (id, array) => {
          dispatch({type:'ADD_ITEM', payload:{id, array}})
      }

@@ -2,26 +2,36 @@ import _, { map } from 'underscore';
 
 const reducer = (state, action) => {
     if (action.type === 'CLEAR_CART') {
+        window.localStorage.setItem('carrito', JSON.stringify([]))
         return {...state, cart:[]}
     }
     if (action.type === 'REMOVE') {
-          const arreglo=action.payload.array
-        // return { ...state, cart: state.cart.filter((cartItem) => cartItem.id !== action) };
+        // const arreglo = action.payload.array
+        // const foundItem = arreglo.find(item => item.id === action.payload.id);
+        // const arregloCarrito = JSON.parse(window.localStorage.getItem('carrito'))
+        const arreglo = action.payload.cart;
+        const filteredArray=arreglo.filter(item => item.id !== action.payload.id)
+        window.localStorage.setItem('carrito', JSON.stringify(filteredArray));
+        state.cart = filteredArray;
+        
+        
+        
+        return state;
     }
-    if (action.type === 'GET_TOTALS') {
-        const { total, amount } = state.cart.reduce((carTotal, cartItem) => {
-            const { precio } = cartItem
-            return carTotal
-        }, {
-            total: 0,
-            amount: 0
-        })
+    // if (action.type === 'GET_TOTALS') {
+    //     const { total, amount } = state.cart.reduce((carTotal, cartItem) => {
+    //         const { precio } = cartItem
+    //         return carTotal
+    //     }, {
+    //         total: 0,
+    //         amount: 0
+    //     })
 
-        return { ...state, total, amount }
+    //     return { ...state, total, amount }
        
-    }
+    // }
 
-    if (action.type === 'ADD_ITEM') {
+        if (action.type === 'ADD_ITEM') {
         const arreglo=action.payload.array
         const foundItem = arreglo.find(item => item.id === action.payload.id)
         if (window.localStorage.carrito) {

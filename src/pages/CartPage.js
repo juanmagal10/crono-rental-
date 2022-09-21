@@ -17,12 +17,14 @@ const CartPage = () => {
     }
   }, []);
 
+ 
+
   return (
   
       //<div className="cart-page-container">
        // <div className="cart-page">
           <section className="cart-section">
-            <Cart cart={cartState} />
+      <Cart cart={cartState} />
           </section>
         //</div>
      // </div>
