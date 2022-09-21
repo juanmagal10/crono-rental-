@@ -8,31 +8,73 @@ export const productsData = [{
             description: 'La resolución realista y el extraordinario enfoque automático con tecnología de inteligencia artificial de la α7 IV complementan una gama de funciones de primer nivel a la vanguardia de la tecnología de imagen. ', 
         url: 'sony-a7iv',
         caracteristicas: ['Tipo de sensor: Full-frame de 35 mm (35,9 x 23,9 mm), sensor Exmor R® CMOS', 'Numero de megapixeles: 33 megapixeles', 'Sensibilidad ISO: 100-51 200 con posibilidad de ampliar hasta 50-204.800', 'Tipo de visor: Visor electrónico de 1,3 cm (tipo 0.5) (OLED Quad-VGA)', 'Tipo de monitor: TFT de 7,5 cm (tipo 3.0)'],
-        precio: 6000, 
+        precio: 8000, 
         id: uuidv4()
              
     },
     {img: require('../products-imgs/black-magic.jpg'),
-        name: 'black magic 4k body', 
+        name: 'Black Magic 4k Body', 
         description: 'Body Blackmagic Design Pocket 4k Cine', 
         url: 'black-magic',
         caracteristicas: [
              'Video 4k', '60fps', '4 baterias canon internas', '2 baterias np-f750 externas', '8hs de bateria','Cable para conectar microfono (camara con phantom)','1tb t5 disco ssd externo (1 hora en raw q0 / 4 horas en raw Q5 / 1000 minutos proxy)',' 250gb disco ssd externo (15 minutos en raw Q0 / 1 hora raw Q5 / 250 minutos proxy	)', '64gb extreme pro sandisk 170mb/s', 				
         ], 
-        precio: 4000,
+        precio: 8000,
+        id: uuidv4()
+        
+    }, 
+    {img: require('../products-imgs/canon-t3i.jpg'),
+        name: 'Body Canon T3i', 
+        description: 'Body Canon T3i, con sensor aps-c', 
+        url: 'canon-t3i',
+        caracteristicas: [
+             'Video full-hd 1080', '18 megapixeles', '8hs de bateria','tamaño de pantalla 3"',				
+        ], 
+        precio: 1400,
         id: uuidv4()
         
     }, 
 
     {img: require('../products-imgs/sigma-18-35-1.8.jfif'),
-        name: 'sigma 18-35mm art 1.8', 
+        name: 'Sigma 18-35mm art 1.8', 
         description: 'Este objetivo zoom estándar de formato APS-C para cámaras digitales Réflex.', 
         url: 'sigma-18-35', 
         caracteristicas: ['Montura: canon(con adaptador para sony)', 'Construccion del objetivo: 17 elementos en 12 grupos', 'Angulo de vision: 76.5°', 'Num. de láminas del diafragma: 9(diafragma circular)', 'Apertura minima: f16', 'Magnificación maxima: 1:4.3', 'Dimensiones: 78mm Diámetro x121mm Longitud', 'Peso: 810gr.',
         ], 
-        precio: 1200,
+        precio: 3000,
         id: uuidv4()
         },
+    {img: require('../products-imgs/sigma-30mm-1-4.jpg'),
+        name: 'Sigma 30mm art 1.4', 
+        description: 'Objetivo de la linea art, para camaras apsc, montura canon pero con adaptador sony o blackmagic/panasonic opcional', 
+        url: 'sigma-30mm', 
+        caracteristicas: ['Montura: canon(con adaptador para sony)', 'Construccion del objetivo: 9 elementos en 8 grupos', 'Angulo de vision: 50.7°', 'Num. de láminas del diafragma: 9(diafragma redondeado)', 'Apertura minima: f16', 'Magnificación maxima: 1:4.3', 'Dimensiones: 74.2mm Diámetro x63.3mm Longitud', 'Peso: 435gr.',
+        ], 
+        precio: 1800,
+        id: uuidv4()
+        },
+        {
+            img: require('../products-imgs/minolta-70-210.jfif'),
+        name: 'Minolta 70-210 f4 Beercan', 
+        description: 'Objetivo analogico Minolta, con montura para sony a y adaptador para sony e', 
+        url: 'minolta-70-200', 
+        caracteristicas: ['Apertura maxima f4 en todo el rango','rango focal 70-210', 'lente analogico muy robusto', 'Muy nitido'
+        ], 
+        precio: 1400,
+        id: uuidv4()
+        },
+
+        {
+            img: require('../products-imgs/sigma-24mm.jpg'),
+        name: 'Sigma super wide 24mm 2.8 macro', 
+        description: 'Objetivo sigma analogico, montura a y con adaptador a montura e', 
+        url: 'sigma-24mm', 
+        caracteristicas: ['Funciona como lente macro', 'Peso: 260gr', 'Tamaño del filtro: 52mm'
+        ], 
+        precio: 900,
+        id: uuidv4()
+        },
+    
     
     {img: require('../products-imgs/GIMBALL.jfif'),
         name: 'Dji Ronin rs2', 
@@ -82,6 +124,33 @@ export const productsData = [{
         url: 'pack-iluminacion2', 
         caracteristicas: ['Kit luces yongnuo x3 bateria 4hs en maxima potencia', 'A vara led yognuo 360 colores + bateria np750 IRC 95%', 'B vara led yognuo 360 colores + bateria np750 IRC 95%', 'C vara led yognuo 360 colores + bateria np750 IRC 95%'], 
         precio: 1700,
+        id: uuidv4()
+    }, 
+    {
+        img: require('../products-imgs/visico-200t.jpg'),
+        name: 'Visico 200t', 
+        description: 'Luz continua VISICO 200T con control remoto.', 
+        url: 'visico1200t', 
+        caracteristicas: ['Equivalente a 4000w temperatura °5500k', 'Montura bowens y paraguas / corriente directa'], 
+        precio: 1800,
+        id: uuidv4()
+    }, 
+    {
+        img: require('../products-imgs/yognuo-1200yn.jpg'),
+        name: 'Yognuo yn1200', 
+        description: 'Panel led yognuo yn1200 con tomacorriente', 
+        url: 'yognuoyn1200', 
+        precio: 1300,
+        caracteristicas: ['Equivalente a 1000w temperatura °5500k', 'Montura bowens y paraguas / corriente directa', 'Se puede pedir con cuatro baterias npf950, en este caso su precio seria 1800'], 
+        id: uuidv4()
+    }, 
+    {
+        img: require('../products-imgs/yognuo-360-rgb.jpg'),
+        name: 'Yognuo yn360 rgb', 
+        description: 'Vara led Yognuo con RGB con baterias', 
+        url: 'yognuo360rgb', 
+        precio: 1300,
+        caracteristicas: ['Equivalente a 250w °5500°3200+RGB', 'montura bowens y paraguas / corriente directa', 'Se puede pedir con cuatro baterias npf950, en este caso su precio seria 1800', 'Con dos baterias npf 750'], 
         id: uuidv4()
     }, 
 
