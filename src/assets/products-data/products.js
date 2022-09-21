@@ -149,7 +149,7 @@ export const productsData = [{
         name: 'Yognuo yn360 rgb', 
         description: 'Vara led Yognuo con RGB con baterias', 
         url: 'yognuo360rgb', 
-        precio: 1300,
+        precio: 800,
         caracteristicas: ['Equivalente a 250w °5500°3200+RGB', 'montura bowens y paraguas / corriente directa', 'Se puede pedir con cuatro baterias npf950, en este caso su precio seria 1800', 'Con dos baterias npf 750'], 
         id: uuidv4()
     }, 
