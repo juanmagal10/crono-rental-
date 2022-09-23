@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer className='footer' id='footer'>
       <div className="adress">
-        <address className='direccion'>Direccion 1213</address>
-         <p>telefono: 1233456677</p>
+        <address className='direccion'>Villa María, Córdoba</address>
+         <p>telefono: 353-5001030</p>
         <p>email: juandiego@gmail.com</p>   
       </div>
 

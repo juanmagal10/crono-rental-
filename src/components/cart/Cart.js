@@ -120,8 +120,8 @@ const Cart = ({ cart }) => {
               <div className="total-container"><p><strong>{`Total: ${totalDinero}`}</strong></p></div>
             </div>
             <div className="clean-cart-container">
-            <button className='clean-cart-button' onClick={()=>cleanCart()}>Vaciar carrito <BsTrash /></button> 
-              <button className='clean-cart-button'><a href={'https://api.whatsapp.com/send?phone=5493535001030&text=Hola buenos dias! quisiera hacer una reserva por los siguientes productos: ' + `%0A${arrayParaWhatsapp.join(',%0A')}%0A` + 'seria un total de: ' + `%0A${totalDinero}%0A`} target='__blank' style={{textDecoration:'none'}}>Reservar</a> </button> 
+              <button className='clean-cart-button'><a href={'https://api.whatsapp.com/send?phone=5493535001030&text=Hola buenos dias! quisiera hacer una reserva por los siguientes productos: ' + `%0A${arrayParaWhatsapp.join(',%0A')}%0A` + 'seria un total de: ' + `%0A${totalDinero}%0A` + '$'} target='__blank'>Reservar</a> </button> 
+              <button className='clean-cart-button' onClick={()=>cleanCart()}><p>Vaciar carrito</p> <BsTrash /></button> 
             </div>
                 </section>
           </div>
