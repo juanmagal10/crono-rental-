@@ -71,6 +71,8 @@
 .cart-img-container{
     width: 20%;
     margin-left: 25px;
+    overflow: hidden;
+    object-fit: cover;
    
 }
 .cart-product-img{
@@ -202,20 +204,20 @@
         margin-right: 30px;
     }
     .cart-name-container{
-        width: 70%;
+        width: 60%;
     }
     .cart-price-container {
         width: 20%;
         margin-right: -5px;
     }
     .cart-product-name {
-        font-size: 12px;
+        font-size: 11px;
         text-align: center;
         margin: 0;
         margin-left: 5px;
     }
     .cart-img-container {
-        width: 8%;
+        width:20%;
         margin-left: -5px;
         display: flex;
         justify-content: left;
