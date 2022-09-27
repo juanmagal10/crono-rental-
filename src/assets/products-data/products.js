@@ -147,10 +147,91 @@ export const productsData = [{
     {
         img: require('../products-imgs/yognuo-360-rgb.jpg'),
         name: 'Yognuo yn360 rgb', 
-        description: 'Vara led Yognuo con RGB con baterias', 
+        description: 'Vara led Yognuo RGB, con baterias', 
         url: 'yognuo360rgb', 
         precio: 800,
-        caracteristicas: ['Equivalente a 250w °5500°3200+RGB', 'montura bowens y paraguas / corriente directa', 'Se puede pedir con cuatro baterias npf950, en este caso su precio seria 1800', 'Con dos baterias npf 750'], 
+        caracteristicas: ['Equivalente a 250w °5500°3200+RGB','Con dos baterias npf 750'], 
+        id: uuidv4()
+    }, 
+    {
+        img: require('../products-imgs/yognuo-360s.jpg'),
+        name: 'Yognuo yn360s slim', 
+        description: 'Vara led Yognuo con baterias', 
+        url: 'yognuo360s', 
+        precio: 700,
+        caracteristicas: ['Equivalente a 250w °5500°3200', 'Con dos baterias npf 750'], 
+        id: uuidv4()
+    }, 
+            {
+                img: require('../products-imgs/photix65.jpg'),
+                name: 'Softbox Photix lantern 65',
+                description: 'Softbox para led',
+                url: 'photix65',
+                precio: 800,
+                caracteristicas: ['Diametro: 65cm','Ofrece luz suave e iluminacion omnidireccional', 'Montura Bowens', 'Armado rapido','Tela difusora de nylon', 'Varillas de fibra de vidrio flexibles y ligeras, muy conveniente para instalar y desmontar'], 
+        id: uuidv4()
+    }, 
+        {
+                img: require('../products-imgs/photix-oval.jpg'),
+                name: 'Softbox Photix raja oval 50x120',
+                description: 'Softbox para led',
+                url: 'photix-oval',
+                precio: 700,
+                caracteristicas: ['Medidas: 50cm x 120cm','Utiliza un sistema de armado rápido con varillas metálicas plegables de gran flexibilidad y resistencia', ' Construido con nuevo material de última generación SL-Tech', 'Armado rapido','Tela difusora de nylon'], 
+        id: uuidv4()
+    }, 
+            {
+                img: require('../products-imgs/sombrilla-plateada-dorada-godox.jpg'),
+                name: 'Sombrilla Godox',
+                description: 'Sombrilla doble cara dorada o plateada de  101cm.',
+                url: 'sombrilla-plateada-dorada',
+                precio: 200,
+                caracteristicas: ['De un lado refleja luz plateada más dura y fría','Si se lo invierte refleja la luz dorada más cálida', 'Permiten amplificar el volumen de la luz del flash, sin que éste incida directamente sobre el modelo'], 
+        id: uuidv4()
+    }, 
+            {
+                img: require('../products-imgs/sombrilla-translucida.jpg'),
+                name: 'Sombrilla Genki',
+                description: 'Sombrilla translucidade  103cm.',
+                url: 'sombrilla-translucida',
+                precio: 300,
+                caracteristicas: ['Ancho: 103 cm','Compatibilidad: Universal','Material: Tela','Tipo de montaje: soporte o rotula','Ancho: 103 cm','Es plegable: Sí'], 
+        id: uuidv4()
+    }, 
+            {
+                img: require('../products-imgs/flash-tt350s.jpg'),
+                name: 'Flash Godox tt350s',
+                description: 'Flash speedlight Godox tt350s.',
+                url: 'godox-tt350s',
+                precio: 1000,
+                caracteristicas: ['Modos de flash: TTL/MANUAL/MASTER FLASH/ESCLAVO','Sistema de radio interno X1 compatible por radio con otros flashes de la marca.','Tiene un número guía de 36 a ISO 100','Sincroniza en 1, 2 y en HSS hasta 1/8000 de segundo','Cabezal inclinable y giratorio de -7 a 90º', 'Incluye pilas'], 
+        id: uuidv4()
+    }, 
+            {
+                img: require('../products-imgs/radio-godoxx1.jfif'),
+                name: 'Radio Godox X1',
+                description: 'Radio para manejo del flash Godox.',
+                url: 'radio-godoxx1',
+                precio: 700,
+                caracteristicas: ['Transmisión wireless: 2,4 Ghz','Peso : 70 gramos', 'Dimensiones: 70 x 65 x 47mm', 'Fuente de alimentación: 2 pilas AA / (incluidas)','Grupos: máximo de 5 grupos ( A / B / C / D / E)'], 
+        id: uuidv4()
+    }, 
+            {
+                img: require('../products-imgs/flash-canon.jpg'),
+                name: 'Canon 320EX',
+                description: 'Con tecnología de receptor inalámbrico, un cabezal de rebote/giratorio y una fuente de iluminación LED constante para trabajar con vídeo, el nuevo Canon Speedlite 320EX abre la puerta a nuevas posibilidades creativas para fotógrafos EOS.',
+                url: 'canon-320ex',
+                precio: 800,
+                caracteristicas: ['Número Guía 32 (m, ISO100)','Cabezal de flash de rebote y giratorio, con configuración de zoom de 24 mm y 50 mm', 'Luz de vídeo LED integrada','Funcionalidad inalámbrica esclava para el flash TTL independiente','Botón de Disparador Remoto', 'Reciclaje rápido y silencioso'], 
+        id: uuidv4()
+    }, 
+            {
+                img: require('../products-imgs/visico-801.jfif'),
+                name: 'Visico 801tx',
+                description:'Control remoto por radio visico vc-801tx para flashes de estudio visico ve pljus, VCHH, Visico 4 e iluminadores Led150t y 200t' ,
+                url: 'godox-tt350s',
+                precio: 700,
+                caracteristicas: ['Frecuencia 2.4 GHz','4 grupos 16 canales','Compatible con Iluminadores Visico LED 150T y 200T','Botón de Disparador Remoto', ' Distancia máxima de Operación: 100m (depende del entorno y de posibles interferencias)'], 
         id: uuidv4()
     }, 
 
@@ -162,7 +243,7 @@ export const productsData = [{
     products:[   {
         img: require('../products-imgs/microfono-boya.jpg'),
         name: 'Microfono BY-PVM1000', 
-        description: 'Microfono BY-PVM1000 + Paraviento +A ntishock', 
+        description: 'Microfono BY-PVM1000 + Paraviento + Antishock', 
         url: 'microfonoBy-pvm1000', 
         caracteristicas: ['Micrófono unidireccional de alta calidad para producciones profesionales', 'Para videocámaras o DSLR, también puede ser usado como micrófono de cañón','Funciona con batería interna (1.5V tipo AA) o con una alimentación Phantom de 48V','Fabricado en aluminio, con una longitud de 28mm y un peso muy ligero de 110g','Rango de frecuencia de 25Hz a 20.000Hz, e incluye filtro HPF (High pass filter) ','Sensibilidad de -33db, nivel de ruido a partir de 80db, y baja impedancia de salida','Incluye soporte de amortiguación, cubierta de espuma, antiviento y cable de 1,5m con conexión mini jack 3,5mm'],
         precio: 600,
@@ -175,18 +256,26 @@ export const productsData = [{
         description: 'Rode Ntg4 Plus + Paraviento y Antishock genericos + pasabajos ', 
         url: 'rode-ntg4-plus', 
         caracteristicas: [' 150h de bateria interna', 'Microfono a condensador cañon (225mm)', 'dispone de pasa altos y atenuador'],
-        precio: 600,
+        precio: 1100,
         id: uuidv4()
         }, 
-
- {
-        img: require('../products-imgs/microfono-boya.jpg'),
+    {
+        img: require('../products-imgs/sony-corbatero.jfif'),
+        name: 'Sony ECM-W2BT', 
+        description: 'Sony corbatero inalambrico ECM-W2BT', 
+        url: 'sony-ecm-2bt', 
+        caracteristicas: ['Sonido de alta calidad', 'Capta el sonido desde cualquier dirección','Transmición sencilla y sin cables.', 'Transmición de audio de alta calidad hacia el receptor.', 'Graba de forma inalámbrica hasta nueve horas.'],
+        precio: 700,
+        id: uuidv4()
+        }, 
+    {
+        img: require('../products-imgs/monitores-rokit.jpg'),
         name: 'Monitor Audio Krk Rokit', 
-        description: 'cmkiqmoc cmqkowmckq cmpoqwmckqmwckq mckqwmcopqw mcoqpmcpqwc', 
-        url: 'luz-led-roja', 
-        caracteristicas: [],
+        description: 'Las bocinas ROKIT de KRK son posiblemente los monitores de estudio más ubicuos de los últimos 15 años. Los encontrarás en estudios caseros, suites de edición y en instalaciones profesionales a gran escala junto con monitores que cuestan diez veces su precio.', 
+        url: 'monitores-rokit', 
+        caracteristicas: ['Un monitor de estudio de campo cercano increíblemente versátil, ideal para cualquier estilo de música.', 'La guía de ondas optimizada proporciona agudos suaves, prístinos y articulados de hasta 35 kHz.',  'Bi-amplificado a medida, clase A/B que ofrece un gran headroom y baja distorsión.'],
         precio: 600,
         id: uuidv4()
-        }]
+        },]
     },
 ]

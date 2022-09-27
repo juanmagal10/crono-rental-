@@ -93,3 +93,11 @@
     border-radius: 2px;
     outline: none;
 }
+
+@media screen and (max-width:480px){
+    .product-card .product-title-name{
+        font-size: 18px;
+        margin: 8px;
+        text-align: center;
+    }
+}
