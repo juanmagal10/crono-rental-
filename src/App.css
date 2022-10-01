@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  /* background-image: url('./assets/products-imgs/fondo-blanco.jpg'); */
+}
+button{
+  font-family:'Inter Tight', sans-serif;
+  letter-spacing: .5mm;
+  font-weight: bold;
 }
 
 

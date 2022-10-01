@@ -17,7 +17,7 @@ import './Carousel.scss'
 
 import {Autoplay, Navigation, Thumbs } from
     "swiper";
-import Products from "../../pages/Products";
+
 
 const Carousel = props => {
   const [activeThumb, setActiveThumb]=useState(null)
@@ -38,7 +38,10 @@ const Carousel = props => {
             
                 <SwiperSlide className="slide" key={index} id='slide'>
                   <img className="slide-content" src={item.img} alt="img" />
-                  <HashLink to={`/${item.url}/#products-section`} className='button-container'><button className="button">Mas...</button></HashLink>
+                <HashLink to={`/${item.url}/#products-section`} className='button-container'><button className="button">Mas...</button></HashLink>
+                <div className="category-container">
+                  <h5 className="category">{item.url === 'productsLigths' ? 'Iluminacion' : item.url === 'productsPhoto' ? 'Fotografia' :'Sonido'}</h5>
+                </div>
                 </SwiperSlide>
            
             ))
@@ -50,7 +53,7 @@ const Carousel = props => {
           <Swiper
           onSwiper={setActiveThumb}
           loop={true}
-          spaceBetween={10}
+          spaceBetween={5}
           modules={[Navigation, Thumbs]}
           grabCursor={true}
           autoplay={true}
@@ -63,13 +66,11 @@ const Carousel = props => {
                   <SwiperSlide className="slide-thumb" key={index}>
                     <img className="slide-thumb-content" src={item.img} alt="img" />
                   </SwiperSlide>
-                    <Link to={item.url}><button className="button">mas...</button></Link>
+                  <Link to={item.url}><button className="button">mas...</button></Link>
                 </div>
               ))
-            }
-             
-                 
-                </Swiper>
+            }  
+          </Swiper>
         
         </>
         )

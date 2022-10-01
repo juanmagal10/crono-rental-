@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import logo from '../../assets/proyecto-crono.png'
+import logo from '../../assets/version-negro-logo3.png'
 import './Header.css'
-import { Link } from 'react-router-dom'
 import { FiMenu } from 'react-icons/fi'
 import { HashLink } from 'react-router-hash-link'
 
@@ -35,7 +34,7 @@ const Header = () => {
       </div>
         <div className="titulo-container">
           <HashLink to='/#inicio' className='link'>
-            <h1 className='titulo'>Crono Rental</h1>
+            <h1 className='titulo'>Rental Audiovisual</h1>
           </HashLink>
         </div>
         <div className="nav-container"> 

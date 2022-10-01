@@ -8,7 +8,7 @@
         height: 62vh;
         display: flex;
         align-items: center;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
         justify-content: center;
         img {
                 position: absolute;
@@ -17,14 +17,30 @@
                 height: 100%;
                 object-fit: cover;
             } 
-            .button-container{
-                display: flex;
-                justify-content: center;
-                    .button {
-                            z-index: 15000;
-                            transition: background .4s;
-                        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+                .button {
+                        z-index: 15000;
+                        transition: background .4s;
+                    }
+        }
+        .category-container{
+            border-bottom: 2px solid #dccc59;
+            z-index: 15000;
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            .category{
+                    font-size: 40px;
+                    z-index: 15000;
+                    color: #dccc59;
+                    font-family: 'Bebas Neue', cursive;
+                    letter-spacing: .5mm;
             }
+        }
         
     }
    
@@ -57,7 +73,7 @@
             transition: all .1s;
         }
         .button:hover{
-            background-color:#ff5600;
+            background-color:#dccc59;
             border: 1px solid #ccc;
             opacity: .7;
         }
@@ -77,6 +93,7 @@
                         object-fit: cover;
                         height: 22vh;
                         width: 100%;
+                        border-radius: 2px;
                     }
             }
 
