@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="adress">
         <address className='direccion'>Villa María, Córdoba</address>
          <p>telefono: 353-5001030</p>
-        <p>email: juandiego@gmail.com</p>   
+        <p>email: juandiegodemo@gmail.com</p>   
       </div>
 
       <div className="contact-container">
