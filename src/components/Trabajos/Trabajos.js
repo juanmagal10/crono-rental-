@@ -4,7 +4,7 @@ import './Trabajos.css'
 const Trabajos = () => {
   return (
     <section className='trabajos-section'>  
-        <h2 className='trabajos-titulo'>Trabajos realizados con estos equipos</h2>
+        <h2 className='trabajos-titulo'>Trabajos realizados con estos equipos:</h2>
         <div className="videos-container">
             <div className="video-container">
                 <h4 className='video-titulo'>Video 1</h4>

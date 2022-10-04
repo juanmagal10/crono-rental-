@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 import Product from '../components/Product/Product';
 import './stylesProducts/ProductsStyles.css';
-// import { useContext } from 'react'
-// import { AppContext} from '../context/dataContext'
 import { useParams } from 'react-router-dom';
 
 const Products = ({ categoria }) => {
-  // const [titulo, setTitulo]=useState('')
+
   const urlparams = useParams().productsCategory;
   let titulo = '';
   switch (urlparams) {
     case 'productsPhoto':
       categoria = categoria[0].products;
-      titulo = 'Camaras y Lentes';
+      titulo = 'Camaras, lentes y accesorios';
       break;
     case 'productsLigths':
       categoria = categoria[1].products;
@@ -24,9 +22,7 @@ const Products = ({ categoria }) => {
       break;
   }
 
-  //  const categoriaUrl= images.filter(item => item.url === categoria.url)
-
-  // const AppContext=useContext()
+ 
   return (
     <>
       <div className="products-page-container">
@@ -46,7 +42,8 @@ const Products = ({ categoria }) => {
                       caracteristicas={item.caracteristicas}
                       id={item.id}
                       categoriaArray={categoria}
-                    ></Product>
+                      precio={item.precio}
+                    />
                   </div>
                 );
               })}

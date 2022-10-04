@@ -14,19 +14,15 @@ const initialState = {
 }
 
 
- const AppProvider = ({children}) => {
+const AppProvider = ({children}) => {
     const [state,dispatch]=useReducer(reducer, initialState)
     const arraySwitcher = (array) => {
         
      }
      
-     const clearCart = () => {
-         dispatch({type:'CLEAR_CART'})
-     }
-
-     const removeItem = (id, cart, arregloFiltrado) => {
-         dispatch({ type: 'REMOVE', payload: { id, cart } })
-        
+     const clearCart = (state) => {
+         dispatch({ type: 'CLEAR_CART' })
+         state(false)
      }
 
      const addItem = (id, array) => {
@@ -43,7 +39,7 @@ const initialState = {
 
     return (
         <AppContext.Provider value={{
-            ...state, clearCart, removeItem, addItem
+            ...state, clearCart, addItem
         }}>{children}</AppContext.Provider>
     )
 }

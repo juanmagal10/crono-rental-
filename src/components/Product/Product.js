@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import { useGlobalContext } from '../../context/dataContext';
 import {FaShoppingCart} from 'react-icons/fa'
 
-const Product = ({ img, title, description,url, categoria,id,categoriaArray,   caracteristicas }) => {
+const Product = ({ img, title, description,url, categoria,id,categoriaArray,precio}) => {
 
     const { addItem } = useGlobalContext();
   
@@ -13,7 +13,8 @@ const Product = ({ img, title, description,url, categoria,id,categoriaArray,   c
         <h4 className='product-title-name'>{title}</h4>
         <div className="product-img-desc-container">
           <img className='product-img' src={img} alt={title} />
-                <p className='product-description'>{description.length>100?`${description.substr(0,100)} ...`:description}</p>
+        <p className='product-description'>{description.length > 100 ? `${description.substr(0, 80)} ...` : description}</p>
+        <p>precio: ${precio}</p>
         </div>
   
         <div className="buttons-container">

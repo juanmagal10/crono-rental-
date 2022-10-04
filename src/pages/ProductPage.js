@@ -3,9 +3,13 @@ import { Link, useParams } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './stylesProductPage/productPage.css';
 import { BsFillStopCircleFill } from 'react-icons/bs';
+import { useGlobalContext } from '../context/dataContext';
+import {FaShoppingCart} from 'react-icons/fa'
 
 const ProductPage = ({ products }) => {
   const productUrl = useParams();
+
+  const { addItem } = useGlobalContext();
 
   // switch (products)
   switch (productUrl.productsCategory) {
@@ -54,6 +58,9 @@ const ProductPage = ({ products }) => {
                 Precio: ${product.precio} la jornada de 8hs.
               </li>
             </ul>
+             <button className='add-button' onClick={() => addItem(product.id, products)}>
+              Añadir <FaShoppingCart />
+            </button>
           </div>
           <Link to={`/${productUrl.productsCategory}`} className="back-btn">
             <button>Back</button>

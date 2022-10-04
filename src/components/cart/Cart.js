@@ -3,11 +3,14 @@ import './Cart.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import {BsTrash} from 'react-icons/bs'
+import { useGlobalContext } from '../../context/dataContext';
 
 const Cart = ({ cart }) => {
   const [showCart, setShowCart] = useState(true);
   const [loading, setLoading] = useState(true)
   const [estadoCarrito, setEstadoCarrito] = useState([])
+
+  const{clearCart }=useGlobalContext()
   
   useEffect(() => {
     const storage = JSON.parse(window.localStorage.getItem('carrito'));
@@ -18,18 +21,12 @@ const Cart = ({ cart }) => {
     setLoading(false)
   }, []);
 
-  const cleanCart = () => {
-    setShowCart(false);
-    window.localStorage.clear()
-  
-  }
-
    const removerProducto = (id) => {
     const filteredState=estadoCarrito.filter(item => item.id !== id)
      setEstadoCarrito(filteredState)
      window.localStorage.setItem('carrito', JSON.stringify(filteredState))
   }
-  const arrayParaWhatsapp=[]
+  const arrayParaWhatsapp = []
   estadoCarrito.map((item) => {
     arrayParaWhatsapp.push(item.name)
   })
@@ -42,7 +39,6 @@ const Cart = ({ cart }) => {
     return <h2 className='loading'>Loading...</h2>
   }else {
     if (estadoCarrito.length === 0 || !showCart) {
-       console.log(cart)
     return ( <>
               <div className="cart-container">
                  <div className="cart-title-container">
@@ -89,7 +85,7 @@ const Cart = ({ cart }) => {
                     <button className='clean-cart-button'>
                       <a href={'https://api.whatsapp.com/send?phone=5493535001030&text=Hola buenos dias! quisiera hacer una reserva por los siguientes productos: ' + `%0A${arrayParaWhatsapp.join(',%0A')}%0A` + 'seria un total de: ' + `%0A${totalDinero}%0A $`} target='__blank'>Reservar</a>
                     </button> 
-                    <button className='clean-cart-button' onClick={() => cleanCart()}>
+                    <button className='clean-cart-button' onClick={() => clearCart(setShowCart)}>
                       <p>Vaciar carrito</p><BsTrash />
                     </button> 
                   </div>

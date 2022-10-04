@@ -2,13 +2,13 @@ import _, { map } from 'underscore';
 
 const reducer = (state, action) => {
     if (action.type === 'CLEAR_CART') {
-        window.localStorage.setItem('carrito', JSON.stringify([]))
+        window.localStorage.clear()
         return {...state, cart:[]}
     }
 
     if (action.type === 'ADD_ITEM') {
-    const arreglo=action.payload.array
-    const foundItem = arreglo.find(item => item.id === action.payload.id)
+        const arreglo=action.payload.array
+        const foundItem = arreglo.find(item => item.id === action.payload.id)
     if (window.localStorage.carrito) {
         state.cart=JSON.parse(window.localStorage.getItem('carrito'))
         state.cart.push(foundItem);
@@ -18,8 +18,8 @@ const reducer = (state, action) => {
     const uniqValuesArray = _.uniq(state.cart,function(item){
         return item.name
     });
-    localStorage.setItem(`carrito`, JSON.stringify(uniqValuesArray))
-    console.log(uniqValuesArray)
+        localStorage.setItem(`carrito`, JSON.stringify(uniqValuesArray))
+        console.log(JSON.parse(window.localStorage.getItem('carrito')).length, 'storage')
 }
     return state
 }
