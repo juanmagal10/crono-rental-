@@ -46,7 +46,8 @@
     border: none;
     cursor: pointer;
     border: .5px solid #222;
-    color: #222;
+    color: #eee;
+    background-color: rgba(50, 91, 132, .7);
 }
 
 .add-button{
@@ -60,15 +61,18 @@
     border: .5px solid #222;
     align-self: flex-end;
     font-size: 15px;
-    color:#222;
+    color:#eee;
+    background-color: rgba(50, 91, 132, .7);
 }
 
 .back-btn button:hover{
     background-color: rgba(200, 190, 85, .65);
+    color: #796840;
 }
 
 .add-button:hover{
     background-color: rgba(200, 190, 85, .65);
+    color: #796840;
 }
 
 .carac-list{
