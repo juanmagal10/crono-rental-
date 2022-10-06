@@ -1,17 +1,51 @@
-import { createContext } from "react";
+import React, { createContext, useReducer, useContext } from "react";
+import { useEffect } from "react";
 import { images } from "../assets";
+import { productsData } from '../assets/products-data/products'
+import reducer from "../reducer/reducer";
 
-export const DataContext = createContext()
+export const AppContext = React.createContext()
 
-export const DataContextProvider = (props) => {
+const initialState = {
+    loading: false,
+    cart: [],
+    total: 0, 
+    amount:0
+}
+
+
+const AppProvider = ({children}) => {
+    const [state,dispatch]=useReducer(reducer, initialState)
     const arraySwitcher = (array) => {
         
-    }
+     }
+     
+     const clearCart = (state) => {
+         dispatch({ type: 'CLEAR_CART' })
+         state(false)
+     }
+
+     const addItem = (id, array) => {
+         dispatch({type:'ADD_ITEM', payload:{id, array}})
+     }
+
     const contextData = images;
 
-    const valor = contextData;
+     const valor = contextData;
+     
+     useEffect(() => {
+         dispatch({type:'GET_TOTALS'})
+     }, [state.cart])
 
     return (
-        <DataContext.Provider value={valor}>{props.children }</DataContext.Provider>
+        <AppContext.Provider value={{
+            ...state, clearCart, addItem
+        }}>{children}</AppContext.Provider>
     )
 }
+
+export const useGlobalContext = () => {
+    return useContext(AppContext)
+}
+
+export { AppProvider}

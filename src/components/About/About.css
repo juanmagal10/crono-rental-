@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    scroll-margin-top: 15vh;
+   
 }
 .about-title{
     margin-bottom: 30px;
@@ -14,5 +16,22 @@
     letter-spacing: 1px;
     line-height: 25px;
     text-align: center;
+    font-family:'Inter Tight', sans-serif;;
 
+}
+
+@media screen and (max-width:750px){
+    .about-container{
+        scroll-margin-top: 13vh;
+    }
+}
+@media screen and (max-width:650px){
+    .about-container{
+        scroll-margin-top: 11vh;;
+    }
+}
+@media screen and (max-width:580px){
+    .about-container{
+        scroll-margin-top: 10vh;;
+    }
 }

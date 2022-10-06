@@ -1,12 +1,10 @@
 .App {
   text-align: center;
 }
-
-
-
-
-
-
-
+button{
+  font-family:'Inter Tight', sans-serif;
+  letter-spacing: .5mm;
+  font-weight: bold;
+}
 
 

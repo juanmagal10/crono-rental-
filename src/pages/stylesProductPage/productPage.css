@@ -14,19 +14,19 @@
     flex-direction: column;
     align-items: center;
     border-radius: 6px;
-    height: 80%;
+    height: 85%;
     padding: 30px;
-    width: 500px;
- 
+    width: 80%;
 }
 
 .product-name{
     font-size: 24px;
     margin: 10px auto 15px auto;
+    scroll-margin-top: 30vh;
 }
 
 .product-image{
-    width: 90%;
+    width: 95%;
     height: 300px;
     margin: 5px;
     border-radius: 6px;
@@ -35,7 +35,7 @@
 
 .product-description{
     margin: 5px;
-    width: 90%;
+    width: 95%;
 }
 
 .back-btn button{
@@ -45,17 +45,39 @@
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    border: .5px solid #111;
+    border: .5px solid #222;
+    color: #eee;
+    background-color: rgba(50, 91, 132, .7);
+}
+
+.add-button{
+    position: relative;
+    width: 94px;
+    height: 36px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    border: .5px solid #222;
+    align-self: flex-end;
+    font-size: 15px;
+    color:#eee;
+    background-color: rgba(50, 91, 132, .7);
 }
 
 .back-btn button:hover{
-    background-color: #ff5600;
+    background-color: rgba(200, 190, 85, .65);
+    color: #796840;
+}
 
+.add-button:hover{
+    background-color: rgba(200, 190, 85, .65);
+    color: #796840;
 }
 
 .carac-list{
     display: flex;
-    width: 90%;
+    width: 95%;
     flex-direction: column;
     justify-content: start;
     

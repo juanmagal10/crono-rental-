@@ -1,26 +1,36 @@
 
 .product-card{
-    border: 1px solid #222;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: fit-content;
     border-radius: 4px;
-    margin: 10px;
-    cursor: pointer;
-    min-height:390px ;
-    /* align-items: center; */
+    border: 1px solid #222;
+    min-height: 450px;
+
 }
 
 .product-card .product-title-name{
     font-size: 20px;
     margin:10px;
     text-align: center;
+    color: #666;
 }
-.product-card .product-img{
+.product-img-desc-container{
+   
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center ;
+}
+.product-card .product-img-desc-container .product-img{
     margin:5px auto;
     border-radius: 6px;
     width: 90%;
-    height: 200px;
+    height: 80%;
     object-fit: cover;
+    height: 250px;
 }
 
 .product-card .product-description{
@@ -34,8 +44,52 @@
     text-decoration: none;
 }
 
+.product-card .buttons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    width: 100%;
+
+}
+.product-card .buttons-container .link{
+    width: 30%;
+    align-items: flex-end;
+    position: relative;
+    bottom: 0;
+}
+
 .product-card .link .button{
-    width: 40%;
+    width: 100%;
     margin:5px auto 5px auto;
     cursor: pointer;
+    background-color: #eee;
+    outline: none;
+    border: 1px solid #3a6372;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px;
+    transition: all .25s;
+    font-size: 11px;
+    height: 31px;
+    background-color: rgba(50, 91, 132, .7);
+    font-weight: bold;
+    box-shadow: 2px 3px 5px 1px #ddd;
+    color: #ebebeb;
+}
+
+.product-card .link .button:hover{ 
+    background-color: rgba(200, 190, 85, .65);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: #796840;
+}
+
+@media screen and (max-width:480px){
+    .product-card .product-title-name{
+        font-size: 18px;
+        margin: 8px;
+        text-align: center;
+    }
 }

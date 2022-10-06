@@ -1,20 +1,18 @@
-import React from 'react';
-import Header from '../components/Header/Header';
+import React, { useState } from 'react';
 import Carousel from '../components/Body/Carousel';
-import Footer from '../components/Footer/Footer';
 import About from '../components/About/About';
+import Trabajos from '../components/Trabajos/Trabajos';
+import './Home.css';
 import { images } from '../assets';
-import { Outlet } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div>
-      <Header></Header>
-      <Carousel images={images}></Carousel>
-      <About></About>
-      <Footer></Footer>
-    </div>
-  )
-}
+    <main className="container">
+      <Carousel images={images} />
+      <About />
+      <Trabajos/>
+    </main>
+  );
+};
 
-export default Home
+export default Home;

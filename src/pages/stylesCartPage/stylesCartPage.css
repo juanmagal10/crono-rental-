@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.cart-section{
+    min-height: 85vh;
+    scroll-margin-top: 15vh;
+    height: fit-content;
+    margin-top: 20vh;
+    
+}
