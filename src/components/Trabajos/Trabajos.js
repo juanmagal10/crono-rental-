@@ -7,7 +7,7 @@ const Trabajos = () => {
         <h2 className='trabajos-titulo'>Trabajos realizados con estos equipos:</h2>
       <div className="videos-container">
           <div className="video-container">
-          <h4 className='video-titulo'>Video institucional ELCOR-TONADIT</h4>
+          <h4 className='video-titulo'>Video institucional ELCOR-TONADITA</h4>
           <h5 className='video-director'>Dirigido por: Tomas Bringa</h5>
                 <iframe src="https://www.youtube.com/embed/vHgF-tiiBNA" title="Video institucional ELCOR-TONADITA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className='video'></iframe>
           </div>
