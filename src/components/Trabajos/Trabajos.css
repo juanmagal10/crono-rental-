@@ -21,7 +21,7 @@
     display: grid;
     width: 100%;
     gap: 1rem;
-    grid-template-rows: 22rem;
+    grid-template-rows: auto;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 40rem), 1fr));
     margin: 0;
     margin-bottom: 30px;
@@ -45,6 +45,7 @@
 }
 .video{
     width: 100%;
-    min-height: 300px;
+    min-height:275px;
     border-radius: 2px;
+    max-height: 320px;
 }
