@@ -43,7 +43,7 @@ const Header = () => {
           <nav className='nav'>
             <ul className='list'>
               <HashLink to='#footer' style={{textDecoration:'none', color:'#222'}}><li >Contacto</li></HashLink>
-              <HashLink to='/#inicio' style={{textDecoration:'none', color:'#222'}}><li>Productos</li></HashLink>
+              <HashLink to='/#trabajos' style={{textDecoration:'none', color:'#222'}}><li>Trabajos</li></HashLink>
               <HashLink to='/#about' style={{textDecoration:'none', color:'#222'}}><li>Info</li></HashLink>
               <HashLink to='/cart/#inicio' style={{textDecoration:'none', color:'#222'}}><li>Carrito</li></HashLink>
             </ul>
@@ -53,8 +53,8 @@ const Header = () => {
               <HashLink to='#footer' style={{textDecoration:'none', color:'#222'}}>
                 <li onClick={showAside}>Contacto</li>
               </HashLink>
-              <HashLink to='/#inicio' style={{textDecoration:'none', color:'#222'}}>
-                <li  onClick={showAside}>Productos</li>
+              <HashLink to='/#trabajos' style={{textDecoration:'none', color:'#222'}}>
+                <li  onClick={showAside}>Trabajos</li>
               </HashLink>
               <HashLink to='/#about' style={{textDecoration:'none', color:'#222'}}>
                 <li  onClick={showAside}>Info</li>

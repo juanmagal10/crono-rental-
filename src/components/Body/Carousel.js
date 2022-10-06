@@ -38,7 +38,7 @@ const Carousel = props => {
             
                 <SwiperSlide className="slide" key={index} id='slide'>
                   <img className="slide-content" src={item.img} alt="img" />
-                <HashLink to={`/${item.url}/#products-section`} className='button-container'><button className="button">Mas...</button></HashLink>
+                <HashLink to={`/${item.url}/#products-section`} className='button-container'><button className="button">Ver<br />productos</button></HashLink>
                 <div className="category-container">
                   <h5 className="category">{item.url === 'productsLigths' ? 'Iluminacion' : item.url === 'productsPhoto' ? 'Fotografia' :'Sonido'}</h5>
                 </div>
